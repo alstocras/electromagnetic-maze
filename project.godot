@@ -11,5 +11,10 @@ config_version=5
 [application]
 
 config/name="electromagnetic-maze"
+run/main_scene="uid://bmha8rxw3pslo"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/stretch/mode="canvas_items"
