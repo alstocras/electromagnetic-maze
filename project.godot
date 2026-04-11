@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 window/stretch/mode="canvas_items"
 
+[global_group]
+
+walls=""
+
 [input]
 
 flip={
@@ -43,3 +47,4 @@ zoomOut={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

@@ -1,17 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://c2w8cga1xm3at"]
+[gd_scene load_steps=3 format=4 uid="uid://c2w8cga1xm3at"]
 
 [ext_resource type="PackedScene" uid="uid://cq4ly2iil7yds" path="res://player.tscn" id="1_nmkr7"]
-
-[sub_resource type="TileSet" id="TileSet_x34kx"]
-tile_shape = 3
-tile_size = Vector2i(28, 32)
-custom_data_layer_0/name = "charge"
-custom_data_layer_0/type = 2
+[ext_resource type="TileSet" uid="uid://c8si0uxjeqxkl" path="res://level0.tres" id="3_tgtrw"]
 
 [node name="Level0" type="Node2D"]
 
-[node name="Walls" type="TileMapLayer" parent="."]
-tile_set = SubResource("TileSet_x34kx")
-
 [node name="Player" parent="." instance=ExtResource("1_nmkr7")]
-position = Vector2(273, 194)
+position = Vector2(280, 184)
+
+[node name="Walls" type="TileMapLayer" parent="." groups=["walls"]]
+tile_map_data = PackedByteArray("AAAIAAkAAQAAAAAAAAAJAAkAAQAAAAAAAAAKAAkAAQAAAAAAAAALAAkAAQAAAAAAAAAHAAkAAQAAAAAAAAAGAAkAAQAAAAAAAAAMAAkAAgAAAAAAAAAMAAgAAgAAAAAAAAALAAcAAgAAAAAAAAALAAYAAgAAAAAAAAAKAAUAAgAAAAAAAAAKAAQAAgAAAAAAAAAJAAMAAwAAAAAAAAAJAAQAAwAAAAAAAAAIAAUAAwAAAAAAAAAIAAYAAwAAAAAAAAAHAAcAAwAAAAAAAAAHAAgAAwAAAAAAAAA=")
+tile_set = ExtResource("3_tgtrw")
