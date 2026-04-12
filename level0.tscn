@@ -4,6 +4,7 @@
 [ext_resource type="FontFile" uid="uid://cx6266nv0fn2g" path="res://assets/fonts/cmrm.ttf" id="3_f02tp"]
 [ext_resource type="TileSet" uid="uid://c8si0uxjeqxkl" path="res://level0.tres" id="3_tgtrw"]
 [ext_resource type="FontFile" uid="uid://cs81pnufyg2ef" path="res://assets/fonts/cmit.ttf" id="4_04g2k"]
+[ext_resource type="AudioStream" uid="uid://ccpv15wlely74" path="res://assets/audio/music/gameplay.ogg" id="5_f02tp"]
 
 [node name="Level0" type="Node2D" unique_id=334235768]
 
@@ -14,7 +15,7 @@ position = Vector2(294, 209)
 tile_map_data = PackedByteArray("AAAJAAkAAQAAAAAAAAAJAAgAAQAAAAAAAAAJAAcAAQAAAAAAAAAKAAcAAQAAAAAAAAAKAAoAAQAAAAAAAAALAAcAAQAAAAAAAAAIAAcAAQAAAAAAAAAKAAsAAgAAAAAAAAALAAsAAgAAAAAAAAAMAAsAAgAAAAAAAAAMAAcAAQAAAAAAAAANAAcAAQAAAAAAAAAOAAcAAwAAAAAAAAAOAAsAAgAAAAAAAAAPAAoAAQAAAAAAAAANAAsAAgAAAAAAAAAPAAgAAAAAAAAAAQAPAAcAAwAAAAAAAAAQAAcAAwAAAAAAAAAQAAgAAwAAAAAAAAAPAAkAAwAAAAAAAAA=")
 tile_set = ExtResource("3_tgtrw")
 
-[node name="1stHelper" type="RichTextLabel" parent="." unique_id=2053356788]
+[node name="helper1" type="RichTextLabel" parent="." unique_id=2053356788]
 offset_left = 479.0
 offset_top = 205.0
 offset_right = 649.0
@@ -25,3 +26,19 @@ theme_override_font_sizes/normal_font_size = 12
 text = "Opposites attract.
 Like charges repel.
 Use these to traverse the map."
+
+[node name="helper0" type="RichTextLabel" parent="." unique_id=1947960535]
+offset_left = 94.0
+offset_top = 225.0
+offset_right = 264.0
+offset_bottom = 277.0
+theme_override_fonts/normal_font = ExtResource("3_f02tp")
+theme_override_fonts/bold_font = ExtResource("4_04g2k")
+theme_override_font_sizes/normal_font_size = 12
+text = "Right-click or space to flip polarity.
+Scroll wheel to zoom."
+horizontal_alignment = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1416970727]
+stream = ExtResource("5_f02tp")
+autoplay = true
