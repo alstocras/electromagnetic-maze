@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://bmha8rxw3pslo"]
+[gd_scene format=3 uid="uid://bmha8rxw3pslo"]
 
 [ext_resource type="FontFile" uid="uid://datd1nepkaruv" path="res://assets/fonts/Audiowide-Regular.ttf" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://cgli37cpf0vbr" path="res://main.gd" id="1_h2yge"]
@@ -31,17 +31,17 @@ corner_radius_top_right = 15
 corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" unique_id=1143253641]
 script = ExtResource("1_h2yge")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=146461207]
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=2001577332]
 offset_right = 1151.0
 offset_bottom = 647.0
 color = Color(0, 0, 0, 1)
 
-[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/ColorRect"]
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/ColorRect" unique_id=97273695]
 layout_mode = 0
 offset_left = 1.0
 offset_top = -2.0
@@ -54,7 +54,7 @@ text = "electromagnetism"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Play" type="Button" parent="CanvasLayer/ColorRect"]
+[node name="Play" type="Button" parent="CanvasLayer/ColorRect" unique_id=1191646842]
 layout_mode = 0
 offset_left = 372.0
 offset_top = 174.0
@@ -69,7 +69,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_h2yge")
 theme_override_styles/hover = SubResource("StyleBoxFlat_lquwl")
 text = "play"
 
-[node name="Quit" type="Button" parent="CanvasLayer/ColorRect"]
+[node name="Quit" type="Button" parent="CanvasLayer/ColorRect" unique_id=106463401]
 layout_mode = 0
 offset_left = 369.0
 offset_top = 346.0
