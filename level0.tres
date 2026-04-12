@@ -1,8 +1,12 @@
-[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://c8si0uxjeqxkl"]
+[gd_resource type="TileSet" format=3 uid="uid://c8si0uxjeqxkl"]
 
 [ext_resource type="Texture2D" uid="uid://bleibkomoiugg" path="res://assets/sprites/terrain/0wall.png" id="1_2reuj"]
+[ext_resource type="PackedScene" uid="uid://b8noajn4hvpc8" path="res://win.tscn" id="1_pmbyy"]
 [ext_resource type="Texture2D" uid="uid://30phngpda5j6" path="res://assets/sprites/terrain/1wall.png" id="2_pmbyy"]
 [ext_resource type="Texture2D" uid="uid://cn0u8dxvm25hm" path="res://assets/sprites/terrain/-1wall.png" id="3_0ca2x"]
+
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_0ca2x"]
+scenes/1/scene = ExtResource("1_pmbyy")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vxl8l"]
 texture = ExtResource("1_2reuj")
@@ -33,3 +37,4 @@ custom_data_layer_0/type = 2
 sources/1 = SubResource("TileSetAtlasSource_vxl8l")
 sources/2 = SubResource("TileSetAtlasSource_xwjtr")
 sources/3 = SubResource("TileSetAtlasSource_0i0an")
+sources/0 = SubResource("TileSetScenesCollectionSource_0ca2x")

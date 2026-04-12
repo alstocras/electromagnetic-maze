@@ -1,6 +1,6 @@
 extends RigidBody2D;
 
-var k: float = 1e4;
+var k: float = 1e5;
 
 var charge: int = 1;
 @onready var walls := get_tree().get_first_node_in_group("walls")
