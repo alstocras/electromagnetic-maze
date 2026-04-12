@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bmha8rxw3pslo"]
 
 [ext_resource type="FontFile" uid="uid://datd1nepkaruv" path="res://assets/fonts/Audiowide-Regular.ttf" id="1_0xm2m"]
-[ext_resource type="Script" uid="uid://cgli37cpf0vbr" path="res://main.gd" id="1_h2yge"]
+[ext_resource type="Script" uid="uid://dedxihn82xluw" path="res://src/scripts/main.gd" id="1_rr2wm"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2yge"]
 bg_color = Color(0.16568649, 0.15598747, 0.15554678, 1)
@@ -32,7 +32,7 @@ corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
 
 [node name="Main" type="Node2D" unique_id=1143253641]
-script = ExtResource("1_h2yge")
+script = ExtResource("1_rr2wm")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=146461207]
 
