@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://b8noajn4hvpc8"]
 
-[ext_resource type="Script" uid="uid://k3j8cwwnnbvv" path="res://win.gd" id="1_hgi8f"]
+[ext_resource type="Script" uid="uid://dgnaruisx0skn" path="res://src/scripts/win.gd" id="1_oue7h"]
 [ext_resource type="Texture2D" uid="uid://bhw08n8n7f27n" path="res://assets/sprites/terrain/win.png" id="1_wao2c"]
 
 [node name="Win" type="StaticBody2D" unique_id=1142181308]
-script = ExtResource("1_hgi8f")
+script = ExtResource("1_oue7h")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=546498484]
 

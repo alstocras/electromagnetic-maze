@@ -1,18 +1,18 @@
 [gd_scene format=4 uid="uid://c2w8cga1xm3at"]
 
-[ext_resource type="PackedScene" uid="uid://cne8slcr7be5d" path="res://player.tscn" id="1_nmkr7"]
+[ext_resource type="PackedScene" uid="uid://cne8slcr7be5d" path="res://src/scenes/player.tscn" id="1_nmkr7"]
 [ext_resource type="FontFile" uid="uid://cx6266nv0fn2g" path="res://assets/fonts/cmrm.ttf" id="3_f02tp"]
-[ext_resource type="TileSet" uid="uid://c8si0uxjeqxkl" path="res://level0.tres" id="3_tgtrw"]
+[ext_resource type="TileSet" uid="uid://c8si0uxjeqxkl" path="res://src/scenes/level0.tres" id="3_tgtrw"]
 [ext_resource type="FontFile" uid="uid://cs81pnufyg2ef" path="res://assets/fonts/cmit.ttf" id="4_04g2k"]
 [ext_resource type="AudioStream" uid="uid://ccpv15wlely74" path="res://assets/audio/music/gameplay.ogg" id="5_f02tp"]
 
 [node name="Level0" type="Node2D" unique_id=334235768]
 
-[node name="Player" parent="." unique_id=734563632 instance=ExtResource("1_nmkr7")]
-position = Vector2(294, 209)
+[node name="Player" parent="." unique_id=701928148 instance=ExtResource("1_nmkr7")]
+position = Vector2(294, 208)
 
 [node name="Walls" type="TileMapLayer" parent="." unique_id=103876432 groups=["walls"]]
-tile_map_data = PackedByteArray("AAAJAAkAAQAAAAAAAAAJAAgAAQAAAAAAAAAJAAcAAQAAAAAAAAAKAAcAAQAAAAAAAAAKAAoAAQAAAAAAAAALAAcAAQAAAAAAAAAIAAcAAQAAAAAAAAAKAAsAAgAAAAAAAAALAAsAAgAAAAAAAAAMAAsAAgAAAAAAAAAMAAcAAQAAAAAAAAANAAcAAQAAAAAAAAAOAAcAAwAAAAAAAAAOAAsAAgAAAAAAAAAPAAoAAQAAAAAAAAANAAsAAgAAAAAAAAAPAAgAAAAAAAAAAQAPAAcAAwAAAAAAAAAQAAcAAwAAAAAAAAAQAAgAAwAAAAAAAAAPAAkAAwAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAAJAAkAAQAAAAAAAAAJAAgAAQAAAAAAAAAJAAcAAQAAAAAAAAAKAAcAAQAAAAAAAAAKAAoAAQAAAAAAAAALAAcAAQAAAAAAAAAIAAcAAQAAAAAAAAAKAAsAAgAAAAAAAAALAAsAAgAAAAAAAAAMAAsAAgAAAAAAAAAMAAcAAQAAAAAAAAANAAcAAQAAAAAAAAAOAAcAAwAAAAAAAAAOAAsAAgAAAAAAAAAPAAoAAQAAAAAAAAANAAsAAgAAAAAAAAAPAAgAAAAAAAAAAwAPAAcAAwAAAAAAAAAQAAcAAwAAAAAAAAAQAAgAAwAAAAAAAAAPAAkAAwAAAAAAAAA=")
 tile_set = ExtResource("3_tgtrw")
 
 [node name="helper1" type="RichTextLabel" parent="." unique_id=2053356788]
