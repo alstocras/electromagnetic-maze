@@ -1,13 +1,13 @@
 [gd_scene load_steps=3 format=4 uid="uid://c2w8cga1xm3at"]
 
-[ext_resource type="PackedScene" uid="uid://cq4ly2iil7yds" path="res://player.tscn" id="1_nmkr7"]
+[ext_resource type="PackedScene" uid="uid://cne8slcr7be5d" path="res://player.tscn" id="1_nmkr7"]
 [ext_resource type="TileSet" uid="uid://c8si0uxjeqxkl" path="res://level0.tres" id="3_tgtrw"]
 
 [node name="Level0" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_nmkr7")]
-position = Vector2(280, 184)
+position = Vector2(294, 209)
 
 [node name="Walls" type="TileMapLayer" parent="." groups=["walls"]]
-tile_map_data = PackedByteArray("AAAIAAkAAQAAAAAAAAAJAAkAAQAAAAAAAAAKAAkAAQAAAAAAAAALAAkAAQAAAAAAAAAHAAkAAQAAAAAAAAAGAAkAAQAAAAAAAAAMAAkAAgAAAAAAAAAMAAgAAgAAAAAAAAALAAcAAgAAAAAAAAALAAYAAgAAAAAAAAAKAAUAAgAAAAAAAAAKAAQAAgAAAAAAAAAJAAMAAwAAAAAAAAAJAAQAAwAAAAAAAAAIAAUAAwAAAAAAAAAIAAYAAwAAAAAAAAAHAAcAAwAAAAAAAAAHAAgAAwAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAAJAAoAAQAAAAAAAAAKAAoAAQAAAAAAAAALAAoAAQAAAAAAAAAIAAoAAQAAAAAAAAAMAAoAAQAAAAAAAAAHAAoAAQAAAAAAAAANAAoAAwAAAAAAAAAMAAkAAwAAAAAAAAAMAAgAAwAAAAAAAAALAAcAAwAAAAAAAAALAAYAAwAAAAAAAAAKAAUAAwAAAAAAAAAKAAQAAgAAAAAAAAAJAAUAAgAAAAAAAAAJAAYAAgAAAAAAAAAIAAcAAgAAAAAAAAAIAAgAAgAAAAAAAAAHAAkAAgAAAAAAAAA=")
 tile_set = ExtResource("3_tgtrw")

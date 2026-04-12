@@ -1,12 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://cq4ly2iil7yds"]
+[gd_scene load_steps=4 format=3 uid="uid://cne8slcr7be5d"]
 
 [ext_resource type="Texture2D" path="res://assets/sprites/objects/pos-player.png" id="1_4flbx"]
 [ext_resource type="Script" uid="uid://dmnm86rooe4g2" path="res://player.gd" id="1_onrkg"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_onrkg"]
-radius = 14.035668
+radius = 13.038404
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="RigidBody2D" groups=["player"]]
 script = ExtResource("1_onrkg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

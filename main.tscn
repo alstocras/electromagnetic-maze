@@ -2,12 +2,23 @@
 
 [ext_resource type="FontFile" uid="uid://datd1nepkaruv" path="res://assets/fonts/Audiowide-Regular.ttf" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://cgli37cpf0vbr" path="res://main.gd" id="1_h2yge"]
-[ext_resource type="FontFile" uid="uid://cx6266nv0fn2g" path="res://assets/fonts/cmrm.ttf" id="2_h2yge"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1bvp3"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2yge"]
+bg_color = Color(0.16568649, 0.15598747, 0.15554678, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lquwl"]
 bg_color = Color(0.75176984, 1, 0.71679014, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1bvp3"]
+bg_color = Color(0.16568649, 0.15598747, 0.15554678, 1)
 corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
@@ -52,24 +63,24 @@ offset_bottom = 304.0
 theme_override_colors/font_color = Color(0.19999993, 1, 0, 1)
 theme_override_colors/font_hover_color = Color(0.0700335, 0.46229666, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(0.07058824, 0.4627451, 0, 1)
-theme_override_fonts/font = ExtResource("2_h2yge")
+theme_override_fonts/font = ExtResource("1_0xm2m")
 theme_override_font_sizes/font_size = 80
-theme_override_styles/normal = SubResource("StyleBoxEmpty_1bvp3")
+theme_override_styles/normal = SubResource("StyleBoxFlat_h2yge")
 theme_override_styles/hover = SubResource("StyleBoxFlat_lquwl")
 text = "play"
 
 [node name="Quit" type="Button" parent="CanvasLayer/ColorRect"]
 layout_mode = 0
 offset_left = 369.0
-offset_top = 316.0
+offset_top = 346.0
 offset_right = 757.0
-offset_bottom = 446.0
+offset_bottom = 476.0
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.6056738, 1.6605109e-06, 3.85046e-07, 1)
 theme_override_colors/font_hover_pressed_color = Color(0.6039216, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_h2yge")
+theme_override_fonts/font = ExtResource("1_0xm2m")
 theme_override_font_sizes/font_size = 80
-theme_override_styles/normal = SubResource("StyleBoxEmpty_1bvp3")
+theme_override_styles/normal = SubResource("StyleBoxFlat_1bvp3")
 theme_override_styles/hover = SubResource("StyleBoxFlat_0xm2m")
 text = "quit"
 

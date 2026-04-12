@@ -8,22 +8,26 @@
 texture = ExtResource("1_2reuj")
 texture_region_size = Vector2i(28, 32)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -16, -14, -8, -14, 8, 0, 16, 14, 8, 14, -8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xwjtr"]
 texture = ExtResource("2_pmbyy")
 texture_region_size = Vector2i(28, 32)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -16, -14, -8, -14, 8, 0, 16, 14, 8, 14, -8)
 0:0/0/custom_data_0 = 1
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0i0an"]
 texture = ExtResource("3_0ca2x")
 texture_region_size = Vector2i(28, 32)
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -16, -14, -8, -14, 8, 0, 16, 14, 8, 14, -8)
 0:0/0/custom_data_0 = -1
 
 [resource]
 tile_shape = 3
 tile_size = Vector2i(28, 32)
+physics_layer_0/collision_layer = 1
 custom_data_layer_0/name = "charge"
 custom_data_layer_0/type = 2
 sources/1 = SubResource("TileSetAtlasSource_vxl8l")

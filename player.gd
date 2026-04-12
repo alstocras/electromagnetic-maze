@@ -1,7 +1,9 @@
-extends CharacterBody2D;
+extends RigidBody2D;
+
+var k: float = 1e4;
 
 var charge: int = 1;
-var walls := get_tree().get_first_node_in_group("walls")
+@onready var walls := get_tree().get_first_node_in_group("walls")
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("flip"):
@@ -18,7 +20,22 @@ func _process(delta: float) -> void:
 		$Camera2D.zoom = clamp($Camera2D.zoom, Vector2(0.01, 0.01), Vector2(2.0, 2.0));
 	
 func _physics_process(delta: float) -> void:
-	pass
+	moveWithForce();
 	
 func moveWithForce() -> void:
-	pass
+	var playerPos = walls.local_to_map(position)
+	var searchRadius = 6;
+	var force = Vector2.ZERO
+	for q in range(-searchRadius, searchRadius + 1):
+		for r in range(-searchRadius, searchRadius + 1):
+			var cell = playerPos + Vector2i(q, r);
+			var tileData = walls.get_cell_tile_data(cell);
+			if not tileData:
+				continue;
+			
+			var wallCharge = tileData.get_custom_data("charge");
+			var displacement = walls.map_to_local(cell) - position
+			
+			force -= displacement.normalized() * (k * wallCharge * charge / displacement.length_squared()); 
+		
+	apply_central_force(force);
