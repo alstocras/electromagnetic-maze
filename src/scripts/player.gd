@@ -8,6 +8,7 @@ var charge: int = 1;
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("flip"):
 		charge *= -1;
+		$Switch.play();
 	$Sprite2D.texture = load("res://assets/sprites/objects/player/" + str(charge) + "player.png");
 	
 	if Input.is_action_just_pressed("zoomIn"):
@@ -18,6 +19,7 @@ func _process(delta: float) -> void:
 		var zoomAmount: float = 0.8
 		$Camera2D.zoom *= zoomAmount;
 		$Camera2D.zoom = clamp($Camera2D.zoom, Vector2(0.01, 0.01), Vector2(2.0, 2.0));
+		
 	
 func _physics_process(delta: float) -> void:
 	moveWithForce();
@@ -35,7 +37,6 @@ func moveWithForce() -> void:
 			
 			var wallCharge = tileData.get_custom_data("charge");
 			var displacement = walls.map_to_local(cell) - position
-			
-			force -= displacement.normalized() * (k * wallCharge * charge / displacement.length_squared()); 
+			force -= displacement.normalized() * (k * wallCharge * charge / displacement.length_squared());
 		
 	apply_central_force(force);
