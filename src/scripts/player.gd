@@ -1,6 +1,7 @@
 extends RigidBody2D;
 
 var k: float = 1e6;
+@export var searchRadius: int;
 
 var charge: int = 1;
 @onready var walls := get_tree().get_first_node_in_group("walls")
@@ -26,7 +27,6 @@ func _physics_process(delta: float) -> void:
 	
 func moveWithForce() -> void:
 	var playerPos = walls.local_to_map(position)
-	var searchRadius = 6;
 	var force = Vector2.ZERO
 	for q in range(-searchRadius, searchRadius + 1):
 		for r in range(-searchRadius, searchRadius + 1):
