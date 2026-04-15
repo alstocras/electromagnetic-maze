@@ -1,12 +1,15 @@
 [gd_scene format=4 uid="uid://c2w8cga1xm3at"]
 
 [ext_resource type="PackedScene" uid="uid://cne8slcr7be5d" path="res://src/scenes/player.tscn" id="1_nmkr7"]
+[ext_resource type="Script" uid="uid://c3eo5d3i2byqs" path="res://src/scenes/level-0.gd" id="1_p76l6"]
 [ext_resource type="FontFile" uid="uid://cx6266nv0fn2g" path="res://assets/fonts/cmrm.ttf" id="3_f02tp"]
 [ext_resource type="TileSet" uid="uid://c8si0uxjeqxkl" path="res://src/scenes/level0.tres" id="3_tgtrw"]
 [ext_resource type="FontFile" uid="uid://cs81pnufyg2ef" path="res://assets/fonts/cmit.ttf" id="4_04g2k"]
 [ext_resource type="AudioStream" uid="uid://ccpv15wlely74" path="res://assets/audio/music/gameplay.ogg" id="5_f02tp"]
+[ext_resource type="FontFile" uid="uid://datd1nepkaruv" path="res://assets/fonts/Audiowide-Regular.ttf" id="7_otcpp"]
 
 [node name="Level0" type="Node2D" unique_id=334235768]
+script = ExtResource("1_p76l6")
 
 [node name="Player" parent="." unique_id=701928148 instance=ExtResource("1_nmkr7")]
 position = Vector2(294, 208)
@@ -53,3 +56,18 @@ horizontal_alignment = 2
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1416970727]
 stream = ExtResource("5_f02tp")
 autoplay = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1409787095]
+
+[node name="Menu" type="Button" parent="CanvasLayer" unique_id=253871081]
+offset_left = 10.0
+offset_top = 9.0
+offset_right = 145.0
+offset_bottom = 59.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_otcpp")
+theme_override_font_sizes/font_size = 32
+text = "menu"
+
+[connection signal="pressed" from="CanvasLayer/Menu" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Menu" to="." method="_on_menu_pressed"]
