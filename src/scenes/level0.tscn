@@ -7,9 +7,14 @@
 [ext_resource type="FontFile" uid="uid://cs81pnufyg2ef" path="res://assets/fonts/cmit.ttf" id="4_04g2k"]
 [ext_resource type="AudioStream" uid="uid://ccpv15wlely74" path="res://assets/audio/music/gameplay.ogg" id="5_f02tp"]
 [ext_resource type="FontFile" uid="uid://datd1nepkaruv" path="res://assets/fonts/Audiowide-Regular.ttf" id="7_otcpp"]
+[ext_resource type="StyleBox" uid="uid://ccnbawvellmqf" path="res://red-button-hover.tres" id="8_otcpp"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p76l6"]
-bg_color = Color(1, 0.49019608, 0.42352942, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_otcpp"]
+bg_color = Color(0.045312405, 0.045312427, 0.045312367, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
 
 [node name="Level0" type="Node2D" unique_id=334235768]
 script = ExtResource("1_p76l6")
@@ -70,7 +75,8 @@ offset_bottom = 59.0
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_otcpp")
 theme_override_font_sizes/font_size = 32
-theme_override_styles/hover = SubResource("StyleBoxFlat_p76l6")
+theme_override_styles/normal = SubResource("StyleBoxFlat_otcpp")
+theme_override_styles/hover = ExtResource("8_otcpp")
 text = "menu"
 
 [connection signal="pressed" from="CanvasLayer/Menu" to="." method="_on_menu_pressed"]

@@ -3,6 +3,8 @@
 [ext_resource type="FontFile" uid="uid://datd1nepkaruv" path="res://assets/fonts/Audiowide-Regular.ttf" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://dedxihn82xluw" path="res://src/scripts/main.gd" id="1_rr2wm"]
 [ext_resource type="AudioStream" uid="uid://n3hpjrhnr1ga" path="res://assets/audio/music/menu.ogg" id="3_32aa5"]
+[ext_resource type="StyleBox" uid="uid://vtg5ft6wi7v" path="res://green-button-hover.tres" id="3_o81g6"]
+[ext_resource type="StyleBox" uid="uid://ccnbawvellmqf" path="res://red-button-hover.tres" id="4_dbro3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2yge"]
 bg_color = Color(0.16568649, 0.15598747, 0.15554678, 1)
@@ -11,22 +13,8 @@ corner_radius_top_right = 15
 corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lquwl"]
-bg_color = Color(0.75176984, 1, 0.71679014, 1)
-corner_radius_top_left = 15
-corner_radius_top_right = 15
-corner_radius_bottom_right = 15
-corner_radius_bottom_left = 15
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1bvp3"]
 bg_color = Color(0.16568649, 0.15598747, 0.15554678, 1)
-corner_radius_top_left = 15
-corner_radius_top_right = 15
-corner_radius_bottom_right = 15
-corner_radius_bottom_left = 15
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0xm2m"]
-bg_color = Color(1, 0.49019015, 0.42285696, 1)
 corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
@@ -67,7 +55,7 @@ theme_override_colors/font_hover_pressed_color = Color(0.07058824, 0.4627451, 0,
 theme_override_fonts/font = ExtResource("1_0xm2m")
 theme_override_font_sizes/font_size = 80
 theme_override_styles/normal = SubResource("StyleBoxFlat_h2yge")
-theme_override_styles/hover = SubResource("StyleBoxFlat_lquwl")
+theme_override_styles/hover = ExtResource("3_o81g6")
 text = "play"
 
 [node name="Quit" type="Button" parent="CanvasLayer/ColorRect" unique_id=106463401]
@@ -82,7 +70,7 @@ theme_override_colors/font_hover_pressed_color = Color(0.6039216, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_0xm2m")
 theme_override_font_sizes/font_size = 80
 theme_override_styles/normal = SubResource("StyleBoxFlat_1bvp3")
-theme_override_styles/hover = SubResource("StyleBoxFlat_0xm2m")
+theme_override_styles/hover = ExtResource("4_dbro3")
 text = "quit"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1539376064]
