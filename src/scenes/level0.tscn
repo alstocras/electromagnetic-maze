@@ -10,7 +10,7 @@
 [ext_resource type="StyleBox" uid="uid://ccnbawvellmqf" path="res://src/resources/red-button-hover.tres" id="8_otcpp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_otcpp"]
-bg_color = Color(0.045312405, 0.045312427, 0.045312367, 1)
+bg_color = Color(0.60784316, 0.67058825, 0.69803923, 1)
 corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
