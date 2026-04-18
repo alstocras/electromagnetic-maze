@@ -6,6 +6,13 @@
 [ext_resource type="StyleBox" uid="uid://vtg5ft6wi7v" path="res://src/resources/green-button-hover.tres" id="3_o81g6"]
 [ext_resource type="StyleBox" uid="uid://ccnbawvellmqf" path="res://src/resources/red-button-hover.tres" id="4_dbro3"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o81g6"]
+bg_color = Color(0.3019608, 0.39607844, 0.7058824, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2yge"]
 bg_color = Color(0.60784316, 0.67058825, 0.69803923, 1)
 corner_radius_top_left = 15
@@ -36,9 +43,10 @@ offset_left = 1.0
 offset_top = -2.0
 offset_right = 1152.0
 offset_bottom = 144.0
-theme_override_colors/default_color = Color(0.45099372, 0.6386854, 1, 1)
+theme_override_colors/default_color = Color(0.56078434, 0.827451, 1, 1)
 theme_override_fonts/normal_font = ExtResource("1_0xm2m")
 theme_override_font_sizes/normal_font_size = 110
+theme_override_styles/normal = SubResource("StyleBoxFlat_o81g6")
 text = "electromagnetism"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -64,7 +72,7 @@ offset_left = 369.0
 offset_top = 346.0
 offset_right = 757.0
 offset_bottom = 476.0
-theme_override_colors/font_color = Color(0.7647059, 0.14117648, 0.32941177, 1)
+theme_override_colors/font_color = Color(0.61960787, 0.27058825, 0.22352941, 1)
 theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_0xm2m")
