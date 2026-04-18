@@ -1,16 +1,24 @@
 [gd_scene format=4 uid="uid://c2w8cga1xm3at"]
 
 [ext_resource type="PackedScene" uid="uid://cne8slcr7be5d" path="res://src/scenes/player.tscn" id="1_nmkr7"]
-[ext_resource type="Script" uid="uid://c3eo5d3i2byqs" path="res://src/scenes/level-0.gd" id="1_p76l6"]
+[ext_resource type="Script" uid="uid://c3eo5d3i2byqs" path="res://src/scripts/level-0.gd" id="1_p76l6"]
 [ext_resource type="FontFile" uid="uid://cx6266nv0fn2g" path="res://assets/fonts/cmrm.ttf" id="3_f02tp"]
 [ext_resource type="TileSet" uid="uid://c8si0uxjeqxkl" path="res://src/scenes/level0.tres" id="3_tgtrw"]
 [ext_resource type="FontFile" uid="uid://cs81pnufyg2ef" path="res://assets/fonts/cmit.ttf" id="4_04g2k"]
 [ext_resource type="AudioStream" uid="uid://ccpv15wlely74" path="res://assets/audio/music/gameplay.ogg" id="5_f02tp"]
+[ext_resource type="Script" uid="uid://dnt3pw116onp3" path="res://src/scripts/level-canvas-layer.gd" id="7_at6ek"]
 [ext_resource type="FontFile" uid="uid://datd1nepkaruv" path="res://assets/fonts/Audiowide-Regular.ttf" id="7_otcpp"]
 [ext_resource type="StyleBox" uid="uid://ccnbawvellmqf" path="res://src/resources/red-button-hover.tres" id="8_otcpp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_otcpp"]
 bg_color = Color(0.60784316, 0.67058825, 0.69803923, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_at6ek"]
+bg_color = Color(0.3019608, 0.39607844, 0.7058824, 1)
 corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
@@ -66,17 +74,32 @@ stream = ExtResource("5_f02tp")
 autoplay = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1409787095]
+script = ExtResource("7_at6ek")
 
 [node name="Menu" type="Button" parent="CanvasLayer" unique_id=253871081]
 offset_left = 10.0
 offset_top = 9.0
-offset_right = 145.0
-offset_bottom = 59.0
+offset_right = 157.0
+offset_bottom = 71.0
 theme_override_colors/font_color = Color(0.9098039, 0.23137255, 0.23137255, 1)
 theme_override_fonts/font = ExtResource("7_otcpp")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_otcpp")
 theme_override_styles/hover = ExtResource("8_otcpp")
 text = "menu"
+
+[node name="ForceIndicatorBase" type="RichTextLabel" parent="CanvasLayer" unique_id=1135621186]
+offset_left = 817.0
+offset_top = 12.0
+offset_right = 1140.0
+offset_bottom = 82.0
+theme_override_colors/default_color = Color(0.56078434, 0.827451, 1, 1)
+theme_override_fonts/normal_font = ExtResource("3_f02tp")
+theme_override_font_sizes/normal_font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_at6ek")
+bbcode_enabled = true
+text = "F = 0 kg⋅px⋅s⁻²"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="CanvasLayer/Menu" to="." method="_on_menu_pressed"]

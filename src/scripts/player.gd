@@ -38,5 +38,6 @@ func moveWithForce() -> void:
 			var wallCharge = tileData.get_custom_data("charge");
 			var displacement = walls.map_to_local(cell) - position
 			force -= displacement.normalized() * (k * wallCharge * charge / displacement.length_squared());
+			Global.playerForce = force;
 		
 	apply_central_force(force);
