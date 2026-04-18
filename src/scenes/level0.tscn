@@ -7,7 +7,7 @@
 [ext_resource type="FontFile" uid="uid://cs81pnufyg2ef" path="res://assets/fonts/cmit.ttf" id="4_04g2k"]
 [ext_resource type="AudioStream" uid="uid://ccpv15wlely74" path="res://assets/audio/music/gameplay.ogg" id="5_f02tp"]
 [ext_resource type="FontFile" uid="uid://datd1nepkaruv" path="res://assets/fonts/Audiowide-Regular.ttf" id="7_otcpp"]
-[ext_resource type="StyleBox" uid="uid://ccnbawvellmqf" path="res://red-button-hover.tres" id="8_otcpp"]
+[ext_resource type="StyleBox" uid="uid://ccnbawvellmqf" path="res://src/resources/red-button-hover.tres" id="8_otcpp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_otcpp"]
 bg_color = Color(0.045312405, 0.045312427, 0.045312367, 1)

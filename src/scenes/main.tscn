@@ -3,8 +3,8 @@
 [ext_resource type="FontFile" uid="uid://datd1nepkaruv" path="res://assets/fonts/Audiowide-Regular.ttf" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://dedxihn82xluw" path="res://src/scripts/main.gd" id="1_rr2wm"]
 [ext_resource type="AudioStream" uid="uid://n3hpjrhnr1ga" path="res://assets/audio/music/menu.ogg" id="3_32aa5"]
-[ext_resource type="StyleBox" uid="uid://vtg5ft6wi7v" path="res://green-button-hover.tres" id="3_o81g6"]
-[ext_resource type="StyleBox" uid="uid://ccnbawvellmqf" path="res://red-button-hover.tres" id="4_dbro3"]
+[ext_resource type="StyleBox" uid="uid://vtg5ft6wi7v" path="res://src/resources/green-button-hover.tres" id="3_o81g6"]
+[ext_resource type="StyleBox" uid="uid://ccnbawvellmqf" path="res://src/resources/red-button-hover.tres" id="4_dbro3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2yge"]
 bg_color = Color(0.16568649, 0.15598747, 0.15554678, 1)
