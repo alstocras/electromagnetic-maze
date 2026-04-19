@@ -1,11 +1,11 @@
-[gd_scene format=3 uid="uid://bmha8rxw3pslo"]
+[gd_scene format=3 uid="uid://dxv0hfpbyd7x3"]
 
-[ext_resource type="FontFile" uid="uid://datd1nepkaruv" path="res://assets/fonts/Audiowide-Regular.ttf" id="1_0xm2m"]
-[ext_resource type="Script" uid="uid://dedxihn82xluw" path="res://src/scripts/main.gd" id="1_rr2wm"]
-[ext_resource type="AudioStream" uid="uid://n3hpjrhnr1ga" path="res://assets/audio/music/menu.ogg" id="3_32aa5"]
-[ext_resource type="StyleBox" uid="uid://vtg5ft6wi7v" path="res://src/resources/green-button-hover.tres" id="3_o81g6"]
-[ext_resource type="StyleBox" uid="uid://ccnbawvellmqf" path="res://src/resources/red-button-hover.tres" id="4_dbro3"]
-[ext_resource type="FontFile" uid="uid://cx6266nv0fn2g" path="res://assets/fonts/cmrm.ttf" id="5_dbro3"]
+[ext_resource type="Script" uid="uid://dedxihn82xluw" path="res://src/scripts/main.gd" id="1_rpstk"]
+[ext_resource type="FontFile" uid="uid://datd1nepkaruv" path="res://assets/fonts/Audiowide-Regular.ttf" id="2_wkiem"]
+[ext_resource type="StyleBox" uid="uid://vtg5ft6wi7v" path="res://src/resources/green-button-hover.tres" id="3_q2j02"]
+[ext_resource type="StyleBox" uid="uid://ccnbawvellmqf" path="res://src/resources/red-button-hover.tres" id="4_hujm0"]
+[ext_resource type="AudioStream" uid="uid://n3hpjrhnr1ga" path="res://assets/audio/music/menu.ogg" id="5_bfieu"]
+[ext_resource type="FontFile" uid="uid://cx6266nv0fn2g" path="res://assets/fonts/cmrm.ttf" id="5_wkiem"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o81g6"]
 bg_color = Color(0.3019608, 0.39607844, 0.7058824, 1)
@@ -29,7 +29,7 @@ corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
 
 [node name="Main" type="Node2D" unique_id=1143253641]
-script = ExtResource("1_rr2wm")
+script = ExtResource("1_rpstk")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=146461207]
 
@@ -45,10 +45,10 @@ offset_top = -2.0
 offset_right = 1152.0
 offset_bottom = 144.0
 theme_override_colors/default_color = Color(0.56078434, 0.827451, 1, 1)
-theme_override_fonts/normal_font = ExtResource("1_0xm2m")
+theme_override_fonts/normal_font = ExtResource("2_wkiem")
 theme_override_font_sizes/normal_font_size = 110
 theme_override_styles/normal = SubResource("StyleBoxFlat_o81g6")
-text = "electromagnetism"
+text = "demo complete"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -61,11 +61,11 @@ offset_bottom = 304.0
 theme_override_colors/font_color = Color(0.11764706, 0.7372549, 0.4509804, 1)
 theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("1_0xm2m")
+theme_override_fonts/font = ExtResource("2_wkiem")
 theme_override_font_sizes/font_size = 80
 theme_override_styles/normal = SubResource("StyleBoxFlat_h2yge")
-theme_override_styles/hover = ExtResource("3_o81g6")
-text = "play"
+theme_override_styles/hover = ExtResource("3_q2j02")
+text = "replay"
 
 [node name="Quit" type="Button" parent="CanvasLayer/ColorRect" unique_id=106463401]
 layout_mode = 0
@@ -76,22 +76,24 @@ offset_bottom = 476.0
 theme_override_colors/font_color = Color(0.61960787, 0.27058825, 0.22352941, 1)
 theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("1_0xm2m")
+theme_override_fonts/font = ExtResource("2_wkiem")
 theme_override_font_sizes/font_size = 80
 theme_override_styles/normal = SubResource("StyleBoxFlat_1bvp3")
-theme_override_styles/hover = ExtResource("4_dbro3")
+theme_override_styles/hover = ExtResource("4_hujm0")
 text = "quit"
 
-[node name="Label" type="Label" parent="CanvasLayer" unique_id=676445283]
-offset_top = 607.0
-offset_right = 120.0
-offset_bottom = 649.0
-theme_override_fonts/font = ExtResource("5_dbro3")
+[node name="Label" type="Label" parent="CanvasLayer/ColorRect/Quit" unique_id=1177696440]
+layout_mode = 0
+offset_left = -369.0
+offset_top = 261.0
+offset_right = -249.0
+offset_bottom = 303.0
+theme_override_fonts/font = ExtResource("5_wkiem")
 theme_override_font_sizes/font_size = 32
 text = "release 1"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1539376064]
-stream = ExtResource("3_32aa5")
+stream = ExtResource("5_bfieu")
 autoplay = true
 
 [connection signal="pressed" from="CanvasLayer/ColorRect/Play" to="." method="_on_play_pressed"]
