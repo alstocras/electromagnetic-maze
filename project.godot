@@ -19,6 +19,10 @@ run/main_scene="uid://bmha8rxw3pslo"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*uid://284aysvvmxol"
+
 [display]
 
 window/size/mode=2
@@ -58,4 +62,4 @@ zoomOut={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
-environment/defaults/default_clear_color=Color(0, 0, 0, 1)
+environment/defaults/default_clear_color=Color(0.19215687, 0.21176471, 0.21960784, 1)

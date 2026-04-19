@@ -3,30 +3,25 @@
 [ext_resource type="FontFile" uid="uid://datd1nepkaruv" path="res://assets/fonts/Audiowide-Regular.ttf" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://dedxihn82xluw" path="res://src/scripts/main.gd" id="1_rr2wm"]
 [ext_resource type="AudioStream" uid="uid://n3hpjrhnr1ga" path="res://assets/audio/music/menu.ogg" id="3_32aa5"]
+[ext_resource type="StyleBox" uid="uid://vtg5ft6wi7v" path="res://src/resources/green-button-hover.tres" id="3_o81g6"]
+[ext_resource type="StyleBox" uid="uid://ccnbawvellmqf" path="res://src/resources/red-button-hover.tres" id="4_dbro3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o81g6"]
+bg_color = Color(0.3019608, 0.39607844, 0.7058824, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2yge"]
-bg_color = Color(0.16568649, 0.15598747, 0.15554678, 1)
-corner_radius_top_left = 15
-corner_radius_top_right = 15
-corner_radius_bottom_right = 15
-corner_radius_bottom_left = 15
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lquwl"]
-bg_color = Color(0.75176984, 1, 0.71679014, 1)
+bg_color = Color(0.60784316, 0.67058825, 0.69803923, 1)
 corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1bvp3"]
-bg_color = Color(0.16568649, 0.15598747, 0.15554678, 1)
-corner_radius_top_left = 15
-corner_radius_top_right = 15
-corner_radius_bottom_right = 15
-corner_radius_bottom_left = 15
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0xm2m"]
-bg_color = Color(1, 0.49019015, 0.42285696, 1)
+bg_color = Color(0.60784316, 0.67058825, 0.69803923, 1)
 corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
@@ -40,7 +35,7 @@ script = ExtResource("1_rr2wm")
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=2001577332]
 offset_right = 1151.0
 offset_bottom = 647.0
-color = Color(0, 0, 0, 1)
+color = Color(0.19215687, 0.21176471, 0.21960784, 1)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/ColorRect" unique_id=97273695]
 layout_mode = 0
@@ -48,9 +43,10 @@ offset_left = 1.0
 offset_top = -2.0
 offset_right = 1152.0
 offset_bottom = 144.0
-theme_override_colors/default_color = Color(0.45099372, 0.6386854, 1, 1)
+theme_override_colors/default_color = Color(0.56078434, 0.827451, 1, 1)
 theme_override_fonts/normal_font = ExtResource("1_0xm2m")
 theme_override_font_sizes/normal_font_size = 110
+theme_override_styles/normal = SubResource("StyleBoxFlat_o81g6")
 text = "electromagnetism"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -61,13 +57,13 @@ offset_left = 372.0
 offset_top = 174.0
 offset_right = 760.0
 offset_bottom = 304.0
-theme_override_colors/font_color = Color(0.19999993, 1, 0, 1)
-theme_override_colors/font_hover_color = Color(0.0700335, 0.46229666, 0, 1)
-theme_override_colors/font_hover_pressed_color = Color(0.07058824, 0.4627451, 0, 1)
+theme_override_colors/font_color = Color(0.11764706, 0.7372549, 0.4509804, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_0xm2m")
 theme_override_font_sizes/font_size = 80
 theme_override_styles/normal = SubResource("StyleBoxFlat_h2yge")
-theme_override_styles/hover = SubResource("StyleBoxFlat_lquwl")
+theme_override_styles/hover = ExtResource("3_o81g6")
 text = "play"
 
 [node name="Quit" type="Button" parent="CanvasLayer/ColorRect" unique_id=106463401]
@@ -76,13 +72,13 @@ offset_left = 369.0
 offset_top = 346.0
 offset_right = 757.0
 offset_bottom = 476.0
-theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0.6056738, 1.6605109e-06, 3.85046e-07, 1)
-theme_override_colors/font_hover_pressed_color = Color(0.6039216, 0, 0, 1)
+theme_override_colors/font_color = Color(0.61960787, 0.27058825, 0.22352941, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("1_0xm2m")
 theme_override_font_sizes/font_size = 80
 theme_override_styles/normal = SubResource("StyleBoxFlat_1bvp3")
-theme_override_styles/hover = SubResource("StyleBoxFlat_0xm2m")
+theme_override_styles/hover = ExtResource("4_dbro3")
 text = "quit"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1539376064]
