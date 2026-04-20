@@ -1,6 +1,6 @@
 extends RigidBody2D;
 
-var k: float = 1e6;
+var k: float = 1e6; # coulomb's constant
 @export var searchRadius: int;
 
 var charge: int = 1;
