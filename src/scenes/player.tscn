@@ -17,6 +17,7 @@ texture = ExtResource("2_onrkg")
 shape = SubResource("CircleShape2D_onrkg")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1065094151]
+ignore_rotation = false
 
 [node name="Switch" type="AudioStreamPlayer2D" parent="." unique_id=765653467]
 stream = ExtResource("3_hwyk6")
