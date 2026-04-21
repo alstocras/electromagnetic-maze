@@ -64,6 +64,17 @@ theme_override_font_sizes/normal_font_size = 12
 text = "Repeatedly switch your polarity to hover along this tunnel."
 horizontal_alignment = 1
 
+[node name="helper4" type="RichTextLabel" parent="." unique_id=2127703650]
+offset_left = -412.0
+offset_top = 18.0
+offset_right = -242.0
+offset_bottom = 70.0
+theme_override_fonts/normal_font = ExtResource("3_f02tp")
+theme_override_fonts/bold_font = ExtResource("4_04g2k")
+theme_override_font_sizes/normal_font_size = 12
+text = "Touch this yellow thing to complete the level"
+horizontal_alignment = 2
+
 [node name="helper0" type="RichTextLabel" parent="." unique_id=1947960535]
 offset_left = 94.0
 offset_top = 225.0
