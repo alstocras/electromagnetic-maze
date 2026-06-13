@@ -10,7 +10,7 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("flip"):
 		charge *= -1;
 		$Switch.play();
-	$Sprite2D.texture = load("res://assets/sprites/objects/player/" + str(charge) + "player.png");
+	$Sprite2D.texture = load("res://assets/sprites/objects/player/" + str(charge) + "player.svg");
 	
 	if Input.is_action_just_pressed("zoomIn"):
 		var zoomAmount: float = 1.2
