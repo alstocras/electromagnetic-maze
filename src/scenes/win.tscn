@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b8noajn4hvpc8"]
 
-[ext_resource type="Script" uid="uid://dgnaruisx0skn" path="res://src/scripts/win.gd" id="1_oue7h"]
-[ext_resource type="Texture2D" uid="uid://bhw08n8n7f27n" path="res://assets/sprites/terrain/win.png" id="1_wao2c"]
+[ext_resource type="Script" uid="uid://dns8jfrr74xjx" path="res://src/scripts/win.gd" id="1_oue7h"]
+[ext_resource type="Texture2D" uid="uid://d1hs5iiw64748" path="res://assets/sprites/terrain/win.svg" id="2_oue7h"]
 
 [node name="Win" type="StaticBody2D" unique_id=1142181308]
 script = ExtResource("1_oue7h")
@@ -12,6 +12,6 @@ script = ExtResource("1_oue7h")
 polygon = PackedVector2Array(0, 0, 0, 16, 14, 9, 14, -9, 0, -16, -14, -9, -14, 9, 0, 16)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=647247992]
-texture = ExtResource("1_wao2c")
+texture = ExtResource("2_oue7h")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
