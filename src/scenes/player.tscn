@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cne8slcr7be5d"]
 
 [ext_resource type="Script" uid="uid://mh4xtf0wrspq" path="res://src/scripts/player.gd" id="1_v4rts"]
-[ext_resource type="Texture2D" uid="uid://cey3p7x4j1e2u" path="res://assets/sprites/objects/player/1player.png" id="2_onrkg"]
+[ext_resource type="Texture2D" uid="uid://cfj8i5xakb7fa" path="res://assets/sprites/objects/player/1player.svg" id="2_hwyk6"]
 [ext_resource type="AudioStream" uid="uid://dxnr2ikiomdd1" path="res://assets/audio/sfx/switch.ogg" id="3_hwyk6"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_onrkg"]
@@ -11,7 +11,8 @@ radius = 13.038404
 script = ExtResource("1_v4rts")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1665653660]
-texture = ExtResource("2_onrkg")
+scale = Vector2(0.04732148, 0.047321487)
+texture = ExtResource("2_hwyk6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1387210835]
 shape = SubResource("CircleShape2D_onrkg")

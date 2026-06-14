@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://30phngpda5j6"
-path="res://.godot/imported/1wall.png-00791e102bcd949cbc0dd1f4388ad1ad.ctex"
+uid="uid://x4ewxrg74et6"
+path="res://.godot/imported/-1wall.svg-b76d66063547d5094db045975f370b88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/terrain/1wall.png"
-dest_files=["res://.godot/imported/1wall.png-00791e102bcd949cbc0dd1f4388ad1ad.ctex"]
+source_file="res://assets/sprites/terrain/-1wall.svg"
+dest_files=["res://.godot/imported/-1wall.svg-b76d66063547d5094db045975f370b88.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

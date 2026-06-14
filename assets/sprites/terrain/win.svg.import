@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmohfqrjeve56"
-path="res://.godot/imported/grabber-hover.png-e220961d0221887851dea47f167684dc.ctex"
+uid="uid://d1hs5iiw64748"
+path="res://.godot/imported/win.svg-dbd94bff91cfd2933297e15bfaf5c2c9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/ui/grabber-hover.png"
-dest_files=["res://.godot/imported/grabber-hover.png-e220961d0221887851dea47f167684dc.ctex"]
+source_file="res://assets/sprites/terrain/win.svg"
+dest_files=["res://.godot/imported/win.svg-dbd94bff91cfd2933297e15bfaf5c2c9.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false
