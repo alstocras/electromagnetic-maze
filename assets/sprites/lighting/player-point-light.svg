@@ -40,11 +40,11 @@
        inkscape:collect="always">
       <stop
          style="stop-color:#ffffff;stop-opacity:1;"
-         offset="0.09005144"
+         offset="0"
          id="stop1" />
       <stop
          style="stop-color:#ffffff;stop-opacity:0;"
-         offset="0.962623"
+         offset="0.5171268"
          id="stop2" />
     </linearGradient>
     <radialGradient

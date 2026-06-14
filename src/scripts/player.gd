@@ -11,7 +11,6 @@ func _process(delta: float) -> void:
 		charge *= -1;
 		$Switch.play();
 	$Sprite2D.texture = load("res://assets/sprites/objects/player/" + str(charge) + "player.svg");
-	$PointLight2D.texture = load("res://assets/sprites/objects/player/" + str(charge) + "player.svg");
 	
 	if Input.is_action_just_pressed("zoomIn"):
 		var zoomAmount: float = 1.2
@@ -23,9 +22,9 @@ func _process(delta: float) -> void:
 		$Camera2D.zoom = clamp($Camera2D.zoom, Vector2(0.01, 0.01), Vector2(2.0, 2.0));
 		
 	if charge == 1:
-		$PointLight2D.color = "eb4361"
+		$PointLight2D.color = "#eb4361"
 	elif charge == -1:
-		$PointLight2D.color = "a8e386"
+		$PointLight2D.color = "#a8e386"
 		
 	
 func _physics_process(delta: float) -> void:
