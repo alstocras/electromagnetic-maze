@@ -59,7 +59,7 @@ theme_override_fonts/font = ExtResource("3_wkiem")
 theme_override_font_sizes/font_size = 80
 theme_override_styles/normal = SubResource("StyleBoxFlat_hujm0")
 theme_override_styles/hover = ExtResource("3_q2j02")
-text = "play"
+text = "replay"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer" unique_id=97273695]
 offset_left = 1.0
