@@ -4,8 +4,8 @@
 [ext_resource type="Script" uid="uid://dedxihn82xluw" path="res://src/scripts/main.gd" id="1_rr2wm"]
 [ext_resource type="AudioStream" uid="uid://n3hpjrhnr1ga" path="res://assets/audio/music/menu.ogg" id="3_32aa5"]
 [ext_resource type="StyleBox" uid="uid://vtg5ft6wi7v" path="res://src/resources/green-button-hover.tres" id="3_o81g6"]
+[ext_resource type="FontFile" uid="uid://baqvogd07tk5l" path="res://assets/fonts/JetBrainsMonoNerdFontMono-Medium.ttf" id="4_2lg1k"]
 [ext_resource type="StyleBox" uid="uid://ccnbawvellmqf" path="res://src/resources/red-button-hover.tres" id="4_dbro3"]
-[ext_resource type="FontFile" uid="uid://cx6266nv0fn2g" path="res://assets/fonts/cmrm.ttf" id="5_dbro3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o81g6"]
 bg_color = Color(0.3019608, 0.39607844, 0.7058824, 1)
@@ -14,15 +14,15 @@ corner_radius_top_right = 30
 corner_radius_bottom_right = 30
 corner_radius_bottom_left = 30
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2yge"]
-bg_color = Color(0.60784316, 0.67058825, 0.69803923, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1bvp3"]
+bg_color = Color(0.92941177, 0.827451, 0.85882354, 1)
 corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1bvp3"]
-bg_color = Color(0.60784316, 0.67058825, 0.69803923, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2yge"]
+bg_color = Color(0.7490196, 0.85882354, 0.78431374, 1)
 corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
@@ -33,13 +33,15 @@ script = ExtResource("1_rr2wm")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=146461207]
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=2001577332]
-offset_right = 1151.0
-offset_bottom = 647.0
-color = Color(0.19215687, 0.21176471, 0.21960784, 1)
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=676445283]
+offset_top = 607.0
+offset_right = 120.0
+offset_bottom = 649.0
+theme_override_fonts/font = ExtResource("4_2lg1k")
+theme_override_font_sizes/font_size = 32
+text = "release 1"
 
-[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/ColorRect" unique_id=97273695]
-layout_mode = 0
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer" unique_id=97273695]
 offset_left = 1.0
 offset_top = -2.0
 offset_right = 1152.0
@@ -52,47 +54,37 @@ text = "electromagnetism"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Play" type="Button" parent="CanvasLayer/ColorRect" unique_id=1191646842]
-layout_mode = 0
-offset_left = 372.0
-offset_top = 174.0
-offset_right = 760.0
-offset_bottom = 304.0
-theme_override_colors/font_color = Color(0.11764706, 0.7372549, 0.4509804, 1)
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("1_0xm2m")
-theme_override_font_sizes/font_size = 80
-theme_override_styles/normal = SubResource("StyleBoxFlat_h2yge")
-theme_override_styles/hover = ExtResource("3_o81g6")
-text = "play"
-
-[node name="Quit" type="Button" parent="CanvasLayer/ColorRect" unique_id=106463401]
-layout_mode = 0
+[node name="Quit" type="Button" parent="CanvasLayer" unique_id=106463401]
 offset_left = 369.0
 offset_top = 346.0
 offset_right = 757.0
 offset_bottom = 476.0
-theme_override_colors/font_color = Color(0.61960787, 0.27058825, 0.22352941, 1)
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
-theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
-theme_override_fonts/font = ExtResource("1_0xm2m")
+theme_override_colors/font_color = Color(0.87058824, 0.25490198, 0.36078432, 1)
+theme_override_colors/font_hover_color = Color(0.92941177, 0.827451, 0.85882354, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.92941177, 0.827451, 0.85882354, 1)
+theme_override_fonts/font = ExtResource("4_2lg1k")
 theme_override_font_sizes/font_size = 80
 theme_override_styles/normal = SubResource("StyleBoxFlat_1bvp3")
 theme_override_styles/hover = ExtResource("4_dbro3")
 text = "quit"
 
-[node name="Label" type="Label" parent="CanvasLayer" unique_id=676445283]
-offset_top = 607.0
-offset_right = 120.0
-offset_bottom = 649.0
-theme_override_fonts/font = ExtResource("5_dbro3")
-theme_override_font_sizes/font_size = 32
-text = "release 1"
+[node name="Play" type="Button" parent="CanvasLayer" unique_id=1191646842]
+offset_left = 372.0
+offset_top = 174.0
+offset_right = 760.0
+offset_bottom = 304.0
+theme_override_colors/font_color = Color(0.08235294, 0.4627451, 0.43137255, 1)
+theme_override_colors/font_hover_color = Color(0.7490196, 0.85882354, 0.78431374, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.7490196, 0.85882354, 0.78431374, 1)
+theme_override_fonts/font = ExtResource("4_2lg1k")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxFlat_h2yge")
+theme_override_styles/hover = ExtResource("3_o81g6")
+text = "play"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1539376064]
 stream = ExtResource("3_32aa5")
 autoplay = true
 
-[connection signal="pressed" from="CanvasLayer/ColorRect/Play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="CanvasLayer/ColorRect/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="CanvasLayer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="CanvasLayer/Play" to="." method="_on_play_pressed"]

@@ -2,23 +2,22 @@
 
 [ext_resource type="PackedScene" uid="uid://cne8slcr7be5d" path="res://src/scenes/player.tscn" id="1_nmkr7"]
 [ext_resource type="Script" uid="uid://c3eo5d3i2byqs" path="res://src/scripts/level-0.gd" id="1_p76l6"]
-[ext_resource type="FontFile" uid="uid://cx6266nv0fn2g" path="res://assets/fonts/cmrm.ttf" id="3_f02tp"]
 [ext_resource type="TileSet" uid="uid://c8si0uxjeqxkl" path="res://src/scenes/level0.tres" id="3_tgtrw"]
 [ext_resource type="FontFile" uid="uid://cs81pnufyg2ef" path="res://assets/fonts/cmit.ttf" id="4_04g2k"]
 [ext_resource type="AudioStream" uid="uid://ccpv15wlely74" path="res://assets/audio/music/gameplay.ogg" id="5_f02tp"]
 [ext_resource type="Script" uid="uid://dnt3pw116onp3" path="res://src/scripts/level-canvas-layer.gd" id="7_at6ek"]
-[ext_resource type="FontFile" uid="uid://datd1nepkaruv" path="res://assets/fonts/Audiowide-Regular.ttf" id="7_otcpp"]
 [ext_resource type="StyleBox" uid="uid://ccnbawvellmqf" path="res://src/resources/red-button-hover.tres" id="8_otcpp"]
+[ext_resource type="FontFile" uid="uid://baqvogd07tk5l" path="res://assets/fonts/JetBrainsMonoNerdFontMono-Medium.ttf" id="10_6b6re"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_otcpp"]
-bg_color = Color(0.60784316, 0.67058825, 0.69803923, 1)
+bg_color = Color(0.92941177, 0.827451, 0.85882354, 1)
 corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_at6ek"]
-bg_color = Color(0.3019608, 0.39607844, 0.7058824, 1)
+bg_color = Color(0.26666668, 0.41960785, 0.74509805, 1)
 corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
@@ -34,9 +33,9 @@ searchRadius = 7
 [node name="helper1" type="RichTextLabel" parent="." unique_id=2053356788]
 offset_left = 479.0
 offset_top = 205.0
-offset_right = 649.0
+offset_right = 713.0
 offset_bottom = 257.0
-theme_override_fonts/normal_font = ExtResource("3_f02tp")
+theme_override_fonts/normal_font = ExtResource("10_6b6re")
 theme_override_fonts/bold_font = ExtResource("4_04g2k")
 theme_override_font_sizes/normal_font_size = 12
 text = "Opposites attract.
@@ -48,7 +47,7 @@ offset_left = 364.0
 offset_top = -30.0
 offset_right = 534.0
 offset_bottom = 22.0
-theme_override_fonts/normal_font = ExtResource("3_f02tp")
+theme_override_fonts/normal_font = ExtResource("10_6b6re")
 theme_override_fonts/bold_font = ExtResource("4_04g2k")
 theme_override_font_sizes/normal_font_size = 12
 text = "Try to ricochet your way across this."
@@ -58,7 +57,7 @@ offset_left = -129.0
 offset_top = 131.0
 offset_right = 41.0
 offset_bottom = 183.0
-theme_override_fonts/normal_font = ExtResource("3_f02tp")
+theme_override_fonts/normal_font = ExtResource("10_6b6re")
 theme_override_fonts/bold_font = ExtResource("4_04g2k")
 theme_override_font_sizes/normal_font_size = 12
 text = "Repeatedly switch your polarity to hover along this tunnel."
@@ -69,7 +68,7 @@ offset_left = 94.0
 offset_top = 225.0
 offset_right = 264.0
 offset_bottom = 277.0
-theme_override_fonts/normal_font = ExtResource("3_f02tp")
+theme_override_fonts/normal_font = ExtResource("10_6b6re")
 theme_override_fonts/bold_font = ExtResource("4_04g2k")
 theme_override_font_sizes/normal_font_size = 12
 text = "Right-click or space to flip polarity.
@@ -92,48 +91,21 @@ offset_left = 10.0
 offset_top = 9.0
 offset_right = 157.0
 offset_bottom = 71.0
-theme_override_colors/font_color = Color(0.9098039, 0.23137255, 0.23137255, 1)
-theme_override_fonts/font = ExtResource("7_otcpp")
+theme_override_colors/font_color = Color(0.87058824, 0.25490198, 0.36078432, 1)
+theme_override_colors/font_hover_color = Color(0.92941177, 0.827451, 0.85882354, 1)
+theme_override_fonts/font = ExtResource("10_6b6re")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_otcpp")
 theme_override_styles/hover = ExtResource("8_otcpp")
 text = "menu"
 
-[node name="ForceX" type="RichTextLabel" parent="CanvasLayer" unique_id=1135621186]
-offset_left = 817.0
-offset_top = 12.0
-offset_right = 1140.0
-offset_bottom = 82.0
-theme_override_colors/default_color = Color(0.56078434, 0.827451, 1, 1)
-theme_override_fonts/normal_font = ExtResource("3_f02tp")
-theme_override_font_sizes/normal_font_size = 32
-theme_override_styles/normal = SubResource("StyleBoxFlat_at6ek")
-bbcode_enabled = true
-text = "Fx = 0 kg⋅px⋅s⁻²"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="ForceY" type="RichTextLabel" parent="CanvasLayer" unique_id=1987814425]
-offset_left = 815.0
-offset_top = 92.0
-offset_right = 1138.0
-offset_bottom = 162.0
-theme_override_colors/default_color = Color(0.56078434, 0.827451, 1, 1)
-theme_override_fonts/normal_font = ExtResource("3_f02tp")
-theme_override_font_sizes/normal_font_size = 32
-theme_override_styles/normal = SubResource("StyleBoxFlat_at6ek")
-bbcode_enabled = true
-text = "Fy = 0 kg⋅px⋅s⁻²"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="Stopwatch" type="RichTextLabel" parent="CanvasLayer" unique_id=243985554]
-offset_left = 14.0
-offset_top = 579.0
-offset_right = 289.0
-offset_bottom = 639.0
-theme_override_colors/default_color = Color(0.56078434, 0.827451, 1, 1)
-theme_override_fonts/normal_font = ExtResource("3_f02tp")
+offset_left = 982.0
+offset_top = 6.0
+offset_right = 1145.0
+offset_bottom = 66.0
+theme_override_colors/default_color = Color(0.93333334, 0.9764706, 1, 1)
+theme_override_fonts/normal_font = ExtResource("10_6b6re")
 theme_override_font_sizes/normal_font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_at6ek")
 bbcode_enabled = true
