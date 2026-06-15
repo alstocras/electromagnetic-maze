@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1151"
+   height="146"
+   viewBox="0 0 304.53541 38.629166"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   sodipodi:docname="title.svg"
+   inkscape:export-filename="title.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="1"
+     inkscape:cx="602"
+     inkscape:cy="-92.5"
+     inkscape:window-width="2546"
+     inkscape:window-height="1388"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2">
+    <inkscape:grid
+       type="axonomgrid"
+       id="grid1"
+       units="mm"
+       originx="0"
+       originy="0"
+       spacingx="0.99999998"
+       spacingy="0.99999998"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <rect
+       x="0"
+       y="0"
+       width="1151"
+       height="146"
+       id="rect4" />
+    <rect
+       x="0"
+       y="0"
+       width="1151"
+       height="146"
+       id="rect3" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="background">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#10121c;stroke-width:1.3;stroke-dasharray:none;stroke-opacity:1"
+       d="M 0,38.629166 90.932668,-7.5 l 95.262792,55 95.26281,-55 30.31088,17.5"
+       id="path1522" />
+    <path
+       style="fill:#ec273f;fill-opacity:1;stroke:#10121c;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+       d="M 76.210236,0 H 0 v 38.629166 z"
+       id="path1523" />
+    <path
+       style="fill:#26854c;fill-opacity:1;stroke:#10121c;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+       d="M 90.932668,-7.5 170.83434,38.631256 0,38.629166 Z"
+       id="path1524" />
+    <path
+       style="fill:#3859b3;fill-opacity:1;stroke:#10121c;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+       d="M 268.46789,0 H 103.92305 l 82.27241,47.5 z"
+       id="path1525" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#10121c;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+       d="M 281.45827,-7.5 311.76915,-5 V 44.999999 L 186.19546,47.5 Z"
+       id="path1526" />
+  </g>
+  <g
+     inkscape:label="text"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.56995335,0,0,0.42865482,-175.74044,-7.7340137)"
+       id="text4"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:120px;font-family:Audiowide;-inkscape-font-specification:Audiowide;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect4);display:inline;fill:#10121c;fill-opacity:1;stroke:#26854c;stroke-width:0"
+       x="575.5"
+       y="0"><tspan
+         x="302.48242"
+         y="108.15971"
+         id="tspan1">coulomb</tspan></text>
+  </g>
+</svg>

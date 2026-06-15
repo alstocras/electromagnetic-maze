@@ -1,18 +1,11 @@
 [gd_scene format=3 uid="uid://bmha8rxw3pslo"]
 
-[ext_resource type="FontFile" uid="uid://datd1nepkaruv" path="res://assets/fonts/Audiowide-Regular.ttf" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://dedxihn82xluw" path="res://src/scripts/main.gd" id="1_rr2wm"]
 [ext_resource type="AudioStream" uid="uid://n3hpjrhnr1ga" path="res://assets/audio/music/menu.ogg" id="3_32aa5"]
 [ext_resource type="StyleBox" uid="uid://vtg5ft6wi7v" path="res://src/resources/green-button-hover.tres" id="3_o81g6"]
 [ext_resource type="FontFile" uid="uid://baqvogd07tk5l" path="res://assets/fonts/JetBrainsMonoNerdFontMono-Medium.ttf" id="4_2lg1k"]
 [ext_resource type="StyleBox" uid="uid://ccnbawvellmqf" path="res://src/resources/red-button-hover.tres" id="4_dbro3"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o81g6"]
-bg_color = Color(0.3019608, 0.39607844, 0.7058824, 1)
-corner_radius_top_left = 30
-corner_radius_top_right = 30
-corner_radius_bottom_right = 30
-corner_radius_bottom_left = 30
+[ext_resource type="Texture2D" uid="uid://de17sv6mtltll" path="res://assets/branding/title.png" id="5_dbro3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1bvp3"]
 bg_color = Color(0.92941177, 0.827451, 0.85882354, 1)
@@ -41,19 +34,6 @@ theme_override_fonts/font = ExtResource("4_2lg1k")
 theme_override_font_sizes/font_size = 32
 text = "release 1"
 
-[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer" unique_id=97273695]
-offset_left = 1.0
-offset_top = -2.0
-offset_right = 1152.0
-offset_bottom = 144.0
-theme_override_colors/default_color = Color(0.56078434, 0.827451, 1, 1)
-theme_override_fonts/normal_font = ExtResource("1_0xm2m")
-theme_override_font_sizes/normal_font_size = 110
-theme_override_styles/normal = SubResource("StyleBoxFlat_o81g6")
-text = "coulomb"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="Quit" type="Button" parent="CanvasLayer" unique_id=106463401]
 offset_left = 369.0
 offset_top = 346.0
@@ -81,6 +61,11 @@ theme_override_font_sizes/font_size = 80
 theme_override_styles/normal = SubResource("StyleBoxFlat_h2yge")
 theme_override_styles/hover = ExtResource("3_o81g6")
 text = "play"
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=785293072]
+offset_right = 1151.0
+offset_bottom = 146.0
+texture = ExtResource("5_dbro3")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1539376064]
 stream = ExtResource("3_32aa5")
